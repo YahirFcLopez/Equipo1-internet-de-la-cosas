@@ -3,8 +3,8 @@
 #include <ArduinoJson.h>
 
 // ==================== CONFIGURACIÓN WIFI ====================
-const char* ssid = "CASA LOPEZ";           // Reemplaza con tu WiFi
-const char* password = "C279AFA6";         // Reemplaza con tu contraseña
+const char* ssid = "";           // Reemplaza con tu WiFi
+const char* password = "";         // Reemplaza con tu contraseña
 
 // ==================== CONFIGURACIÓN MQTT ====================c
 const char* mqtt_server = "broker.emqx.io";
@@ -115,3 +115,4 @@ void loop() {
     client.publish(topic, jsonBuffer);
   }
 }  
+
