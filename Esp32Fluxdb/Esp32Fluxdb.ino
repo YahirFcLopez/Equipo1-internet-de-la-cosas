@@ -2,11 +2,11 @@
 #include <HTTPClient.h>
 
 // ---- CONFIGURACIÓN WIFI ----
-const char* ssid = "CASA LOPEZ";
-const char* password = "C279AFA6";
+const char* ssid = "nombre del internet";
+const char* password = "contraseña";
 
 // ---- CONFIGURACIÓN INFLUXDB ----
-const char* influxURL = "http://192.168.84.12:8086/api/v2/write?org=PracticaUltrasonico&bucket=ultrasonico&precision=s";
+const char* influxURL = "poner aqui tu ip/api/v2/write?org=nombre de tu organizacion &bucket=nombre del bucketo&precision=s";
 const char* authToken = "xskIIG_5eo7jswCPUerNg02QFNvw03qt_TrEIskAzTn1ETbh9n3ZzeuMxxKIWynvXNHRu5N3mb11MDzJL1Lwtg==";
 
 // ---- CONFIGURACIÓN SENSOR ULTRASÓNICO ----
@@ -72,3 +72,4 @@ void loop() {
   // Esperar 1 segundos antes del siguiente envío de informacion ala pagina
   delay(1000);
 }
+
